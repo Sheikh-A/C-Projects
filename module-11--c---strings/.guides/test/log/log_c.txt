@@ -1,0 +1,140 @@
+clang src/my_string.c src/program3.c -o program3;
+src/my_string.c:123:20: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            return str;
+                   ^~~
+src/my_string.c:161:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+src/my_string.c:205:23: warning: multi-character character constant [-Wmultichar]
+    char null_value = '/0';
+                      ^
+src/my_string.c:217:18: warning: incompatible integer to pointer conversion assigning to 'char *' from 'char'; take the address with & [-Wint-conversion]
+    concatString = null_value;
+                 ^ ~~~~~~~~~~
+                   &
+src/my_string.c:205:23: warning: implicit conversion from 'int' to 'char' changes value from 12080 to 48 [-Wconstant-conversion]
+    char null_value = '/0';
+         ~~~~~~~~~~   ^~~~
+src/my_string.c:293:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringTwoPointer = str2; *stringTwoPointer; ++stringTwoPointer) {
+                         ^ ~~~~
+src/my_string.c:298:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringOnePointer = str1; *stringOnePointer; ++stringOnePointer) {
+                         ^ ~~~~
+7 warnings generated.
+wait;
+./program3 1 abc 2 test;
+****INTEGER ARRAY**
+Integer Array is 1 at index 0 
+Integer Array is 2 at index 1 
+****STRING ARRAY**
+./program3 abc test  
+wait;
+clang src/my_string.c src/program3.c -o program3;
+src/my_string.c:18:21: warning: multi-character character constant [-Wmultichar]
+        while (str[len] != '/0') {  // count up to the first NULL
+                           ^
+src/my_string.c:18:18: warning: result of comparison of constant 12080 with expression of type 'const char' is always true [-Wtautological-constant-out-of-range-compare]
+        while (str[len] != '/0') {  // count up to the first NULL
+               ~~~~~~~~ ^  ~~~~
+src/my_string.c:66:28: warning: multi-character character constant [-Wmultichar]
+     dest[string_length] = '/0'; //Set Null condition
+                           ^
+src/my_string.c:66:28: warning: implicit conversion from 'int' to 'char' changes value from 12080 to 48 [-Wconstant-conversion]
+     dest[string_length] = '/0'; //Set Null condition
+                         ~ ^~~~
+src/my_string.c:85:13: warning: multi-character character constant [-Wmultichar]
+    *dest = '/0';
+            ^
+src/my_string.c:85:13: warning: implicit conversion from 'int' to 'char' changes value from 12080 to 48 [-Wconstant-conversion]
+    *dest = '/0';
+          ~ ^~~~
+src/my_string.c:116:22: warning: multi-character character constant [-Wmultichar]
+    int null_value = '/0';
+                     ^
+src/my_string.c:123:20: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            return str;
+                   ^~~
+src/my_string.c:130:17: warning: multi-character character constant [-Wmultichar]
+        return (char*) '/0';
+                       ^
+src/my_string.c:161:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+src/my_string.c:205:23: warning: multi-character character constant [-Wmultichar]
+    char null_value = '/0';
+                      ^
+src/my_string.c:217:18: warning: incompatible integer to pointer conversion assigning to 'char *' from 'char'; take the address with & [-Wint-conversion]
+    concatString = null_value;
+                 ^ ~~~~~~~~~~
+                   &
+src/my_string.c:205:23: warning: implicit conversion from 'int' to 'char' changes value from 12080 to 48 [-Wconstant-conversion]
+    char null_value = '/0';
+         ~~~~~~~~~~   ^~~~
+src/my_string.c:293:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringTwoPointer = str2; *stringTwoPointer; ++stringTwoPointer) {
+                         ^ ~~~~
+src/my_string.c:298:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringOnePointer = str1; *stringOnePointer; ++stringOnePointer) {
+                         ^ ~~~~
+15 warnings generated.
+wait;
+./program3 1 abc 2 test;
+****INTEGER ARRAY**
+Integer Array is 1 at index 0 
+Integer Array is 2 at index 1 
+****STRING ARRAY**
+./program3 abc test  
+wait;
+clang src/my_string.c src/program3.c -o program3;
+src/my_string.c:123:20: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            return str;
+                   ^~~
+src/my_string.c:161:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+src/my_string.c:217:18: warning: incompatible integer to pointer conversion assigning to 'char *' from 'char'; take the address with & [-Wint-conversion]
+    concatString = null_value;
+                 ^ ~~~~~~~~~~
+                   &
+src/my_string.c:293:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringTwoPointer = str2; *stringTwoPointer; ++stringTwoPointer) {
+                         ^ ~~~~
+src/my_string.c:298:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringOnePointer = str1; *stringOnePointer; ++stringOnePointer) {
+                         ^ ~~~~
+5 warnings generated.
+wait;
+./program3 1 abc 2 test;
+****INTEGER ARRAY**
+Integer Array is 1 at index 0 
+Integer Array is 2 at index 1 
+****STRING ARRAY**
+./program3 abc test  
+wait;
+clang src/my_string.c src/program3.c -o program3;
+src/my_string.c:123:20: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            return str;
+                   ^~~
+src/my_string.c:161:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+src/my_string.c:217:18: warning: incompatible integer to pointer conversion assigning to 'char *' from 'char'; take the address with & [-Wint-conversion]
+    concatString = null_value;
+                 ^ ~~~~~~~~~~
+                   &
+src/my_string.c:293:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringTwoPointer = str2; *stringTwoPointer; ++stringTwoPointer) {
+                         ^ ~~~~
+src/my_string.c:298:26: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    for(stringOnePointer = str1; *stringOnePointer; ++stringOnePointer) {
+                         ^ ~~~~
+5 warnings generated.
+wait;
+./program3 1 abc 2 test;
+****INTEGER ARRAY**
+Integer Array is 1 at index 0 
+Integer Array is 2 at index 1 
+****STRING ARRAY**
+./program3 abc test  
+wait;

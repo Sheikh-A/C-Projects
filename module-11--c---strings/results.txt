@@ -1,0 +1,57 @@
+Finding the C stuff...
+Opening the c file
+Closing the c file
+
+
+=============================================================================================
+============================= FULL AUTOGRADING OUTPUT =======================================
+=============================================================================================
+_____________________________________________________________________________________________
+c
+|---check_test_cases
+|---|---program3OutputIntegers1: {'weight': 1, 'passed': False, 'message': "failure: Assertion 'buffer[0][0] == '1'' failed: buffer[0][0] == 73, '1' == 49"}
+|---|---program3OutputIntegers2: {'weight': 1, 'passed': False, 'message': "failure: Assertion 'buffer[1][0] == '2'' failed: buffer[1][0] == 42, '2' == 50"}
+|---|---program3OutputStrings: {'weight': 2, 'passed': True, 'message': 'ok'}
+|---|---testStrCatHelloWorld: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrCatTesting: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrCatEmptyString: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrCat2HelloWorld: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrCat2Testing: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrCat2EmptyString: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrccaseEmptyString: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrccaseUpperLowerTesting: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrccaseMixedCasingAbcd: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrccaseMixedCasingTesting: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrchrFirstChar: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrchrDoubleChar: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrchrFinalChar: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrchr2FirstChar: {'weight': 1, 'passed': False, 'message': 'error: Received signal 11 (Segmentation fault)'}
+|---|---testStrchr2DoubleChar: {'weight': 1, 'passed': False, 'message': 'error: Received signal 11 (Segmentation fault)'}
+|---|---testStrchr2FinalChar: {'weight': 1, 'passed': False, 'message': 'error: Received signal 11 (Segmentation fault)'}
+|---|---testStrcmpSingleWord1: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmpNull: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmpSingleWord2: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmpMultiWord: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmpNotEqual: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmp2SingleWord1: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmp2Null: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmp2SingleWord2: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmp2MultiWord: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcmp2NotEqual: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcpyLongWord: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcpyShortWord: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcpyNull: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcpy2LongWord: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcpy2ShortWord: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrcpy2Null: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrrevNull: {'weight': 1, 'passed': True, 'message': 'ok'}
+|---|---testStrrevLowerCase: {'weight': 1, 'passed': False, 'message': 'failure: Assertion \'wordB == ptr\' failed: wordB == "gnitset", ptr == "gtetins"'}
+|---|---testStrrevMixedCase: {'weight': 1, 'passed': False, 'message': 'failure: Assertion \'wordC == ptr\' failed: wordC == "dcbA", ptr == "dAcb"'}
+|---|---EC_testStrtok: {'weight': 1, 'passed': False, 'message': None, 'extra_credit': True}
+
+---------------------------------------------------------------------------------------------
+
+
+
+Total Points: 32.0/39.0
+Final score: 82%
